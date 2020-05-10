@@ -3,10 +3,10 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "bootstrap": "4.3.1",
-        "react": "16.8.6",
-        "react-dom": "16.8.6",
-        "react-scripts": "2.1.8"
+        "bootstrap": "^4.3.1",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-scripts": "^2.1.8"
     },
     "devDependencies": {
         "cz-conventional-changelog": "3.1.0",
@@ -17,14 +17,16 @@
         "eslint-plugin-node": "11.0.0",
         "eslint-plugin-prettier": "3.1.2"
     },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
-    },
-    "eslintConfig": {
-        "extends": "react-app"
     },
     "browserslist": [
         ">0.2%",
